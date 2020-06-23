@@ -101,9 +101,11 @@ app.get('/broker/:sfid', function(req, res) {
   });
 });
 
-//app.get('/profile',function(req,res) {
-//  res.end("File is uploaded");
-//});
+app.get('/profile', function(req, res) {
+  client.query('SELECT * FROM ' + brokerTable, function(error, data) {
+    res.json(data.rows);
+  });
+});
 
 app.post('/api/photo',function(req,res){
   upload(req,res,function(err) {
