@@ -17,10 +17,8 @@ let prettifyProperty = (property) => {
         beds: property.beds__c,
         baths: property.baths__c,
         description: property.description__c,
-        //picture: property.picture__c,
-        picture: property.PICTURE2__c,
-        //thumbnail: property.thumbnail__c,
-        thumbnail: property.PICTURE2__c,
+        picture: property.picture__c,
+        thumbnail: property.thumbnail__c,
         likes: Math.floor(Math.random() * 20) + 1 // Likes are simulated: random number between 0 and 20. See "Favorites" for similar functionality.
     };
     prettyProperty.broker = property.broker__c_sfid ?
