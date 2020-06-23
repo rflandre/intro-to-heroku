@@ -16,6 +16,7 @@ let prettifyBroker = (broker) => {
         mobilePhone: broker.mobile_phone__c,
         email: broker.email__c,
         Description: broker.Description__c,
+        comment: broker.comment__c,
         social: broker.social__c,
         twitter: broker.twitter__c,
         likes: Math.floor(Math.random() * 20) + 1 // Likes are simulated: random number between 0 and 20. See "Favorites" for similar functionality.
