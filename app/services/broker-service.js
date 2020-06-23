@@ -15,8 +15,8 @@ let prettifyBroker = (broker) => {
         phone: broker.phone__c,
         mobilePhone: broker.mobile_phone__c,
         email: broker.email__c,
-        email: broker.Description,
-        email: broker.social
+        Description: broker.Description,
+        social: broker.social
     };
 };
 
