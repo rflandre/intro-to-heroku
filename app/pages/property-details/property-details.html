@@ -30,9 +30,10 @@
                 </ion-item>
                 <ion-item>
                     <ion-icon item-left name="pricetag"></ion-icon>
-                    <h3>Asking Price</h3>
+                    <h3>Price</h3>
                     <ion-note item-right>{{property.priceFormatted}}</ion-note>
                 </ion-item>
+                <h3>Proposed Brand Ambassador</h3>
                 <button ion-item (click)="showBroker($event, property.broker)">
                     <ion-avatar item-left>
                         <img src="{{property.broker.picture}}"/>
