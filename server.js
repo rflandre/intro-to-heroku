@@ -102,9 +102,7 @@ app.get('/broker/:sfid', function(req, res) {
 });
 
 app.get('/profile', function(req, res) {
-  client.query('SELECT * FROM ' + brokerTable, function(error, data) {
-    res.json(data.rows);
-  });
+  res.sendFile(__dirname + "/test.html");
 });
 
 app.post('/api/photo',function(req,res){
