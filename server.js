@@ -101,18 +101,18 @@ app.get('/broker/:sfid', function(req, res) {
   });
 });
 
-app.get('/profile',function(req,res) {
-  res.end("File is uploaded");
-});
+//app.get('/profile',function(req,res) {
+//  res.end("File is uploaded");
+//});
 
-app.post('/api/photo',function(req,res){
-  upload(req,res,function(err) {
-      if(err) {
-          return res.end("Error uploading file.");
-      }
-      res.end("File is uploaded");
-  });
-});
+//app.post('/api/photo',function(req,res){
+//  upload(req,res,function(err) {
+//      if(err) {
+//          return res.end("Error uploading file.");
+//      }
+//      res.end("File is uploaded");
+//  });
+//});
 
 var port = process.env.PORT || 8200;
 
