@@ -2,7 +2,7 @@ var path = require('path');
 var express = require('express');
 var bodyParser = require('body-parser');
 var pg = require('pg');
-var multer  =   require('multer');
+var multer  =  require('multer');
 
 var app = express();
 
@@ -105,14 +105,14 @@ app.get('/broker/:sfid', function(req, res) {
 //  res.end("File is uploaded");
 //});
 
-//app.post('/api/photo',function(req,res){
-//  upload(req,res,function(err) {
-//      if(err) {
-//          return res.end("Error uploading file.");
-//      }
-//      res.end("File is uploaded");
-//  });
-//});
+app.post('/api/photo',function(req,res){
+  upload(req,res,function(err) {
+      if(err) {
+          return res.end("Error uploading file.");
+      }
+      res.end("File is uploaded");
+  });
+});
 
 var port = process.env.PORT || 8200;
 
