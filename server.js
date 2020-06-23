@@ -101,8 +101,8 @@ app.get('/broker/:sfid', function(req, res) {
   });
 });
 
-app.get('/profile',function(req,res){
-  res.sendFile("app/⁨pages/⁨profile⁩/profile.html");
+app.get('/profile',function(req,res) {
+  res.end("File is uploaded");
 });
 
 app.post('/api/photo',function(req,res){
