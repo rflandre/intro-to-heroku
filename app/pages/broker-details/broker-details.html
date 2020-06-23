@@ -12,14 +12,16 @@
                 <img src="{{broker.picture}}"/>
                 <h2>{{broker.name}}</h2>
                 <h3>{{broker.title}}</h3>
+                <h3>{{broker.description}}</h3>
             </ion-card-content>
 
             <ion-list>
-                <a href="tel:{{broker.Phone__c}}" ion-item>
-                    <ion-icon name="call" item-left></ion-icon>
-                    <p>Call Office</p>
-                    <h2>{{broker.phone}}</h2>
+                <a href="{{broker.social}}" ion-item>
+                    <ion-icon name="social" item-left></ion-icon>
+                    <p>My Social references</p>
+                    <h2>{{broker.social}}</h2>
                 </a>
+
                 <a href="tel:{{broker.phone}}" ion-item>
                     <ion-icon name="call" item-left></ion-icon>
                     <p>Call Mobile</p>
