@@ -12,14 +12,17 @@
                 <img src="{{broker.picture}}"/>
                 <h2>{{broker.name}}</h2>
                 <h3>{{broker.title}}</h3>
-                <h3>{{broker.description}}</h3>
+                <h4>{{broker.description}}</h4>
             </ion-card-content>
 
             <ion-list>
+                <p>My Social references</p>
                 <a href="{{broker.social}}" ion-item>
                     <ion-icon name="social" item-left></ion-icon>
-                    <p>My Social references</p>
                     <h2>{{broker.social}}</h2>
+                </a>
+                <a href="{{broker.twitter}}" ion-item>
+                    <ion-icon name="twitter" item-left></ion-icon>
                     <h2>{{broker.twitter}}</h2>
                 </a>
 
