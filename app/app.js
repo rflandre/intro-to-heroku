@@ -6,7 +6,7 @@ import {WelcomePage} from './pages/welcome/welcome';
 import {PropertyListPage} from './pages/property-list/property-list';
 import {BrokerListPage} from './pages/broker-list/broker-list';
 import {FavoriteListPage} from './pages/favorite-list/favorite-list';
-import {ProfilePage} from './pages/profile';
+//import {ProfilePage} from './pages/profile';
 import {PropertyService} from './services/property-service';
 import {BrokerService} from './services/broker-service';
 import {ProfileService} from './services/profile-service';
