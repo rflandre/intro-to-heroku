@@ -117,9 +117,9 @@ app.post('/api/photo',function(req,res){
           return res.end("Error uploading file."+ err);
       }
       res.end("File is uploaded");
-      client.query('INSERT INTO ' + propertyTable + ' (PICTURE2__c) VALUES ($1) where City__c=Boston', [req], function(error, data) {
-        res.json(data);
-      });
+      //client.query('INSERT INTO ' + propertyTable + ' (PICTURE2__c) VALUES ($1) where City__c=Boston', [req], function(error, data) {
+      //  res.json(data);
+      //});
   });
 });
 
