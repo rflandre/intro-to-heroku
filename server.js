@@ -28,7 +28,7 @@ var brokerTable = 'broker__c';
 
 var storage =   multer.diskStorage({
   destination: function (req, file, callback) {
-    callback(null, './');
+    callback(null, './uploads');
   },
   filename: function (req, file, callback) {
     callback(null, file.fieldname + '-' + Date.now());
