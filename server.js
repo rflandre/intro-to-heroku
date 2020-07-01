@@ -28,7 +28,7 @@ var brokerTable = 'broker__c';
 
 var storage =   multer.diskStorage({
   destination: function (req, file, callback) {
-    callback(null, './uploads');
+    callback(null, './');
   },
   filename: function (req, file, callback) {
     callback(null, file.fieldname + '-' + Date.now());
@@ -68,7 +68,6 @@ app.get('/property/:id', function(req, res) {
     res.json(data.rows[0]);
   });
 });
-
 
 app.get('/favorite', function(req, res) {
   client.query('SELECT ' + propertyTable + '.*, ' + favoriteTable + '.sfid AS favorite__c_sfid FROM ' + propertyTable + ', ' + favoriteTable + ' WHERE ' + propertyTable + '.sfid = ' + favoriteTable + '.property__c', function(error, data) {
