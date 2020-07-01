@@ -82,6 +82,12 @@ app.post('/favorite', function(req, res) {
   });
 });
 
+app.post('/picture', function(req, res) {
+  client.query('INSERT INTO ' + propertyTable + ' (property__c) VALUES ($1)', [req.body.property__c], function(error, data) {
+    res.json(data);
+  });
+});
+
 app.delete('/favorite/:sfid', function(req, res) {
   client.query('DELETE FROM ' + favoriteTable + ' WHERE sfid = $1', [req.params.sfid], function(error, data) {
     res.json(data);
@@ -111,6 +117,9 @@ app.post('/api/photo',function(req,res){
           return res.end("Error uploading file."+ err);
       }
       res.end("File is uploaded");
+      client.query('INSERT INTO ' + propertyTable + ' (PICTURE2__c) VALUES ($1) where City__c=Boston', [req], function(error, data) {
+        res.json(data);
+      });
   });
 });
 
