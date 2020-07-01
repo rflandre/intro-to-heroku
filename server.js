@@ -108,7 +108,7 @@ app.get('/profile', function(req, res) {
 app.post('/api/photo',function(req,res){
   upload(req,res,function(err) {
       if(err) {
-          return res.end("Error uploading file.");
+          return res.end("Error uploading file."+ err);
       }
       res.end("File is uploaded");
   });
