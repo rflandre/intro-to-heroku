@@ -41,17 +41,9 @@
                     <p>Email</p>
                     <h2>{{broker.email}}</h2>
                 </a>
+                <iframe src="https://calendar.google.com/calendar/embed?src=maloubinette%40gmail.com&ctz=Europe%2FParis" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
             </ion-list>
 
         </ion-card>
     </div>
-    <div class="ion-padding">
-
-        <ion-calendar [(ngModel)]="date"
-          (onChange)="onChange($event)"
-          [type]="type"
-          [format]="'YYYY-MM-DD'">
-        </ion-calendar>
-    
-      </div>
 </ion-content>
